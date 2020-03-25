@@ -1,13 +1,15 @@
-# Write your code here.
-def line(array)
+katz_deli = ["Moshe", "Fayge", "Rivki"]
+
+
+def line(array) # this was the one I figured out
   if array.length >= 1
-    newarray = []
+    nuarray = []
     counter = 1 
     array.each do |name|
-      newarray.push("#{counter}. #{name}")
+      nuarray.push("#{counter}. #{name}")
       counter += 1 
     end 
-    puts "The line is currently: #{newarray.join(" ")}"
+    puts "The line is currently: #{nuarray.join(" ")}"
   else
     puts "The line is currently empty."
   end
